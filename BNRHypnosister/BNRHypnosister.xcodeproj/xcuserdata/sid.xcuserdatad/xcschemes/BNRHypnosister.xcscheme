@@ -14,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F13C7881B0E8E6F00664D87"
-               BuildableName = "RandomItems"
-               BlueprintName = "RandomItems"
-               ReferencedContainer = "container:RandomItems.xcodeproj">
+               BlueprintIdentifier = "1F13C79D1B114D7700664D87"
+               BuildableName = "BNRHypnosister.app"
+               BlueprintName = "BNRHypnosister"
+               ReferencedContainer = "container:BNRHypnosister.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1F13C7B21B114D7700664D87"
+               BuildableName = "BNRHypnosisterTests.xctest"
+               BlueprintName = "BNRHypnosisterTests"
+               ReferencedContainer = "container:BNRHypnosister.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +42,24 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1F13C7B21B114D7700664D87"
+               BuildableName = "BNRHypnosisterTests.xctest"
+               BlueprintName = "BNRHypnosisterTests"
+               ReferencedContainer = "container:BNRHypnosister.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1F13C7881B0E8E6F00664D87"
-            BuildableName = "RandomItems"
-            BlueprintName = "RandomItems"
-            ReferencedContainer = "container:RandomItems.xcodeproj">
+            BlueprintIdentifier = "1F13C79D1B114D7700664D87"
+            BuildableName = "BNRHypnosister.app"
+            BlueprintName = "BNRHypnosister"
+            ReferencedContainer = "container:BNRHypnosister.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1F13C7881B0E8E6F00664D87"
-            BuildableName = "RandomItems"
-            BlueprintName = "RandomItems"
-            ReferencedContainer = "container:RandomItems.xcodeproj">
+            BlueprintIdentifier = "1F13C79D1B114D7700664D87"
+            BuildableName = "BNRHypnosister.app"
+            BlueprintName = "BNRHypnosister"
+            ReferencedContainer = "container:BNRHypnosister.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1F13C7881B0E8E6F00664D87"
-            BuildableName = "RandomItems"
-            BlueprintName = "RandomItems"
-            ReferencedContainer = "container:RandomItems.xcodeproj">
+            BlueprintIdentifier = "1F13C79D1B114D7700664D87"
+            BuildableName = "BNRHypnosister.app"
+            BlueprintName = "BNRHypnosister"
+            ReferencedContainer = "container:BNRHypnosister.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

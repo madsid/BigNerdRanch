@@ -14,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F13C7881B0E8E6F00664D87"
-               BuildableName = "RandomItems"
-               BlueprintName = "RandomItems"
-               ReferencedContainer = "container:RandomItems.xcodeproj">
+               BlueprintIdentifier = "1FE088AE1B12575F00495DB8"
+               BuildableName = "HypnoNerd.app"
+               BlueprintName = "HypnoNerd"
+               ReferencedContainer = "container:HypnoNerd.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1FE088C31B12576300495DB8"
+               BuildableName = "HypnoNerdTests.xctest"
+               BlueprintName = "HypnoNerdTests"
+               ReferencedContainer = "container:HypnoNerd.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +42,24 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1FE088C31B12576300495DB8"
+               BuildableName = "HypnoNerdTests.xctest"
+               BlueprintName = "HypnoNerdTests"
+               ReferencedContainer = "container:HypnoNerd.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1F13C7881B0E8E6F00664D87"
-            BuildableName = "RandomItems"
-            BlueprintName = "RandomItems"
-            ReferencedContainer = "container:RandomItems.xcodeproj">
+            BlueprintIdentifier = "1FE088AE1B12575F00495DB8"
+            BuildableName = "HypnoNerd.app"
+            BlueprintName = "HypnoNerd"
+            ReferencedContainer = "container:HypnoNerd.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1F13C7881B0E8E6F00664D87"
-            BuildableName = "RandomItems"
-            BlueprintName = "RandomItems"
-            ReferencedContainer = "container:RandomItems.xcodeproj">
+            BlueprintIdentifier = "1FE088AE1B12575F00495DB8"
+            BuildableName = "HypnoNerd.app"
+            BlueprintName = "HypnoNerd"
+            ReferencedContainer = "container:HypnoNerd.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1F13C7881B0E8E6F00664D87"
-            BuildableName = "RandomItems"
-            BlueprintName = "RandomItems"
-            ReferencedContainer = "container:RandomItems.xcodeproj">
+            BlueprintIdentifier = "1FE088AE1B12575F00495DB8"
+            BuildableName = "HypnoNerd.app"
+            BlueprintName = "HypnoNerd"
+            ReferencedContainer = "container:HypnoNerd.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

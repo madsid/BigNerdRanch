@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1FE088B51B12576100495DB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE088B41B12576100495DB8 /* AppDelegate.swift */; };
-		1FE088B71B12576100495DB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE088B61B12576100495DB8 /* ViewController.swift */; };
+		1FE088B71B12576100495DB8 /* BNRHypnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE088B61B12576100495DB8 /* BNRHypnosisViewController.swift */; };
 		1FE088BA1B12576200495DB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE088B81B12576200495DB8 /* Main.storyboard */; };
 		1FE088BC1B12576200495DB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE088BB1B12576200495DB8 /* Images.xcassets */; };
 		1FE088BF1B12576200495DB8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE088BD1B12576200495DB8 /* LaunchScreen.xib */; };
 		1FE088CB1B12576300495DB8 /* HypnoNerdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE088CA1B12576300495DB8 /* HypnoNerdTests.swift */; };
+		1FE088D71B12591600495DB8 /* BNRHypnosisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE088D61B12591600495DB8 /* BNRHypnosisView.swift */; };
+		1FE088D91B125A8100495DB8 /* BNRReminderVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE088D81B125A8100495DB8 /* BNRReminderVIewController.swift */; };
+		1FE088DB1B125CD100495DB8 /* BNRReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE088DA1B125CD100495DB8 /* BNRReminderViewController.xib */; };
+		1FE088DD1B126EAF00495DB8 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE088DC1B126EAF00495DB8 /* QuizViewController.swift */; };
+		1FE088DF1B126F8000495DB8 /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE088DE1B126F8000495DB8 /* QuizViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +34,18 @@
 		1FE088AF1B12575F00495DB8 /* HypnoNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypnoNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE088B31B12576000495DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE088B41B12576100495DB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1FE088B61B12576100495DB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FE088B61B12576100495DB8 /* BNRHypnosisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNRHypnosisViewController.swift; sourceTree = "<group>"; };
 		1FE088B91B12576200495DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FE088BB1B12576200495DB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1FE088BE1B12576200495DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1FE088C41B12576300495DB8 /* HypnoNerdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnoNerdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE088C91B12576300495DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE088CA1B12576300495DB8 /* HypnoNerdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypnoNerdTests.swift; sourceTree = "<group>"; };
+		1FE088D61B12591600495DB8 /* BNRHypnosisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BNRHypnosisView.swift; path = ../../BNRHypnosister/BNRHypnosister/BNRHypnosisView.swift; sourceTree = "<group>"; };
+		1FE088D81B125A8100495DB8 /* BNRReminderVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNRReminderVIewController.swift; sourceTree = "<group>"; };
+		1FE088DA1B125CD100495DB8 /* BNRReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRReminderViewController.xib; sourceTree = "<group>"; };
+		1FE088DC1B126EAF00495DB8 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuizViewController.swift; path = ../../Quiz/Quiz/QuizViewController.swift; sourceTree = "<group>"; };
+		1FE088DE1B126F8000495DB8 /* QuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +87,13 @@
 		1FE088B11B12575F00495DB8 /* HypnoNerd */ = {
 			isa = PBXGroup;
 			children = (
+				1FE088DC1B126EAF00495DB8 /* QuizViewController.swift */,
+				1FE088DE1B126F8000495DB8 /* QuizViewController.xib */,
 				1FE088B41B12576100495DB8 /* AppDelegate.swift */,
-				1FE088B61B12576100495DB8 /* ViewController.swift */,
+				1FE088D61B12591600495DB8 /* BNRHypnosisView.swift */,
+				1FE088B61B12576100495DB8 /* BNRHypnosisViewController.swift */,
+				1FE088D81B125A8100495DB8 /* BNRReminderVIewController.swift */,
+				1FE088DA1B125CD100495DB8 /* BNRReminderViewController.xib */,
 				1FE088B81B12576200495DB8 /* Main.storyboard */,
 				1FE088BB1B12576200495DB8 /* Images.xcassets */,
 				1FE088BD1B12576200495DB8 /* LaunchScreen.xib */,
@@ -192,7 +207,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE088DF1B126F8000495DB8 /* QuizViewController.xib in Resources */,
 				1FE088BA1B12576200495DB8 /* Main.storyboard in Resources */,
+				1FE088DB1B125CD100495DB8 /* BNRReminderViewController.xib in Resources */,
 				1FE088BF1B12576200495DB8 /* LaunchScreen.xib in Resources */,
 				1FE088BC1B12576200495DB8 /* Images.xcassets in Resources */,
 			);
@@ -212,7 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE088B71B12576100495DB8 /* ViewController.swift in Sources */,
+				1FE088B71B12576100495DB8 /* BNRHypnosisViewController.swift in Sources */,
+				1FE088DD1B126EAF00495DB8 /* QuizViewController.swift in Sources */,
+				1FE088D91B125A8100495DB8 /* BNRReminderVIewController.swift in Sources */,
+				1FE088D71B12591600495DB8 /* BNRHypnosisView.swift in Sources */,
 				1FE088B51B12576100495DB8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

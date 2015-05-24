@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  HypnoNerd
+//  BNRHypnosister
 //
-//  Created by sid on 5/24/15.
+//  Created by sid on 5/23/15.
 //  Copyright (c) 2015 madsid. All rights reserved.
 //
 
@@ -15,29 +15,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
-    
         // Override point for customization after application launch.
         
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window = UIWindow( frame: UIScreen.mainScreen().bounds )
         
-        var hvc = BNRHypnosisViewController()
+        var screenRect = self.window?.bounds
+        var bigRect = screenRect
+        bigRect?.size.width *= 2.0
         
-        var appBundle = NSBundle.mainBundle()
-        var rvc = BNRReminderVIewController(nibName: "BNRReminderViewController", bundle: appBundle)
+        var scrollView = UIScrollView(frame: screenRect!)
+        scrollView.pagingEnabled = true
+        self.window?.addSubview(scrollView)
         
-        //var rvc = BNRReminderVIewController() //This does not work like in BNR book
+        var hypnosisView = BNRHypnosisView(frame: screenRect!)
+        scrollView.addSubview(hypnosisView)
         
-        var qvc = QuizViewController(nibName: "QuizViewController", bundle: appBundle)
+        screenRect?.origin.x += screenRect!.size.width
+        var anotherView = BNRHypnosisView(frame: screenRect!)
+        scrollView.addSubview(anotherView)
         
-        var tabBarController = UITabBarController()
-        tabBarController.viewControllers = [hvc,rvc,qvc]
-        
-        self.window?.rootViewController = tabBarController
+        scrollView.contentSize = bigRect!.size
         
         self.window?.backgroundColor = UIColor.whiteColor()
         self.window?.makeKeyAndVisible()
+        
         return true
     }
 

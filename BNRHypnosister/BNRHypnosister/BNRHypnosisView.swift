@@ -52,48 +52,19 @@ class BNRHypnosisView: UIView {
         self.circleColor.setStroke()
         path.stroke()
         
-        var currentContext = UIGraphicsGetCurrentContext()
-        var logoImage = UIImage(named: "logo.png")
-        
-        CGContextSaveGState(currentContext)
-        
-        var locations = [CGFloat]()
-        locations = [0.0,1.0]
-        var components = [CGFloat]()
-        components = [0.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0]
-        
-        var colorSpace = CGColorSpaceCreateDeviceRGB()
-        var gradient = CGGradientCreateWithColorComponents(colorSpace, components, locations, 2)
-        
-        let gradientClipPath = UIBezierPath()
-        gradientClipPath.moveToPoint(CGPoint(x: center.x - bounds.size.width/2, y: center.y + bounds.size.height/2 + 30))
-        gradientClipPath.addLineToPoint(CGPoint(x: center.x + bounds.size.width/2, y: center.y + bounds.size.height/2 + 30))
-        gradientClipPath.addLineToPoint(CGPoint(x: center.x, y: center.y - bounds.size.height/2 - 30))
-        gradientClipPath.addLineToPoint(CGPoint(x: center.x - bounds.size.width/2, y: center.y + bounds.size.height/2 + 30))
-
-        
-        var startPoint = CGPointMake(0, center.y - bounds.size.height / 2.0  - 30 )
-        var endPoint = CGPointMake(0, center.y + bounds.size.height / 2.0 + 30 )
-        
-        gradientClipPath.addClip()
-        CGContextDrawLinearGradient(currentContext, gradient, startPoint, endPoint, 0)
-        
-        CGContextRestoreGState(currentContext)
-    
-        currentContext = UIGraphicsGetCurrentContext()
-        
-        CGContextSaveGState(currentContext)
-        CGContextSetShadow(currentContext, CGSizeMake(4, 7) , 3)
-        
-        logoImage?.drawInRect(rect)
-        
-        CGContextRestoreGState(currentContext)
-        
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         println("Touched \(self)")
-        
+        //changeColor()
+    }
+    
+    func changeToColor(color:UIColor){
+        setCurrentCircleColor(color)
+    }
+    
+    
+    func changeColor(){
         var red = (CGFloat(arc4random()) % 100 ) / 100.0;
         var green = (CGFloat(arc4random()) % 100 ) / 100.0;
         var blue = (CGFloat(arc4random()) % 100 ) / 100.0;
