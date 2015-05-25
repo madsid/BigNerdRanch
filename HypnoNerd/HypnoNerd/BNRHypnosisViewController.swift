@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BNRHypnosisViewController: UIViewController {
+class BNRHypnosisViewController: UIViewController, UITextFieldDelegate {
     
     var backgroundView = BNRHypnosisView()
     
@@ -30,6 +30,14 @@ class BNRHypnosisViewController: UIViewController {
         backgroundView.changeToColor(UIColor.redColor())
         self.view = backgroundView
         
+        var textFieldRect = CGRectMake(20, 100, bounds.size.width - 40.0, 30)
+        var textField = UITextField(frame: textFieldRect)
+        textField.borderStyle = UITextBorderStyle.RoundedRect
+        textField.placeholder = "Hypnotize me"
+        textField.returnKeyType = UIReturnKeyType.Done
+        textField.delegate = self
+        backgroundView.addSubview(textField)
+        
         
         var items = ["Red","Blue","Green"]
         var segmentedControl = UISegmentedControl(items: items)
@@ -38,6 +46,13 @@ class BNRHypnosisViewController: UIViewController {
         segmentedControl.selectedSegmentIndex = 0
         
         self.view.addSubview(segmentedControl)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.drawHypnoticMessage(textField.text)
+        textField.text = ""
+        textField.resignFirstResponder()
+        return true
     }
     
     func changeColorSegmented(segment:UISegmentedControl){
@@ -49,6 +64,39 @@ class BNRHypnosisViewController: UIViewController {
         }
         else if(segment.selectedSegmentIndex == 2){
             backgroundView.changeToColor(UIColor.greenColor())
+        }
+    }
+    
+    func drawHypnoticMessage(message:String){
+        for(var i = 0; i < 20; i++){
+            var messageLabel = UILabel()
+            messageLabel.backgroundColor = UIColor.clearColor()
+            messageLabel.textColor = UIColor.whiteColor()
+            messageLabel.text = message
+            messageLabel.sizeToFit()
+            
+            var width = self.view.bounds.size.width - messageLabel.bounds.size.width
+            var x = CGFloat(arc4random()) % width
+            
+            var height = self.view.bounds.size.height - messageLabel.bounds.size.height
+            var y = CGFloat(arc4random()) % height
+            
+            var frame = messageLabel.frame
+            frame.origin = CGPointMake(x, y)
+            messageLabel.frame = frame
+            
+            self.view.addSubview(messageLabel)
+            
+            var motionEffect = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
+            motionEffect.minimumRelativeValue = -25
+            motionEffect.maximumRelativeValue = 25
+            messageLabel.addMotionEffect(motionEffect)
+            
+            motionEffect = UIInterpolatingMotionEffect(keyPath: "center.y", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
+            motionEffect.minimumRelativeValue = -25
+            motionEffect.maximumRelativeValue = 25
+            messageLabel.addMotionEffect(motionEffect)
+            
         }
     }
     

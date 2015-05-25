@@ -58,6 +58,7 @@ class BNRHypnosisView: UIView {
         println("Touched \(self)")
         //changeColor()
     }
+   
     
     func changeToColor(color:UIColor){
         setCurrentCircleColor(color)
@@ -65,9 +66,9 @@ class BNRHypnosisView: UIView {
     
     
     func changeColor(){
-        var red = (CGFloat(arc4random()) % 100 ) / 100.0;
-        var green = (CGFloat(arc4random()) % 100 ) / 100.0;
-        var blue = (CGFloat(arc4random()) % 100 ) / 100.0;
+        var red = (CGFloat(rand()) % 100 ) / 100.0;
+        var green = (CGFloat(rand()) % 100 ) / 100.0;
+        var blue = (CGFloat(rand()) % 100 ) / 100.0;
         
         var randomColor = UIColor(red: red, green: green, blue: blue, alpha: CGFloat(1.0))
         

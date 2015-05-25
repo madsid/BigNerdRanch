@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  BNRHypnosister
+//  BNRHomepwner
 //
-//  Created by sid on 5/23/15.
+//  Created by sid on 5/24/15.
 //  Copyright (c) 2015 madsid. All rights reserved.
 //
 
@@ -13,37 +13,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        self.window = UIWindow( frame: UIScreen.mainScreen().bounds )
-        
-        var screenRect = self.window?.bounds
-        var bigRect = screenRect
-        bigRect?.size.width *= 2.0
-        
-        var scrollView = UIScrollView(frame: screenRect!)
-        
-        var hypnosisView = BNRHypnosisView(frame: screenRect!)
-        hypnosisView = BNRHypnosisView(frame: screenRect!)
-        scrollView.addSubview(hypnosisView)
-        
-        screenRect?.origin.x += screenRect!.size.width
-        var anotherView = BNRHypnosisView(frame: screenRect!)
-        scrollView.addSubview(anotherView)
-        
-        scrollView.contentSize = bigRect!.size
-        
-        scrollView.pagingEnabled = true
-        self.window?.addSubview(scrollView)
+        var itemsViewController = BNRItemsViewController()
+        self.window?.rootViewController = itemsViewController
         
         self.window?.backgroundColor = UIColor.whiteColor()
         self.window?.makeKeyAndVisible()
-        
         return true
     }
-    
-    
+
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

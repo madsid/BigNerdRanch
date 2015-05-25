@@ -1,12 +1,4 @@
-//
-//  BNRItem.swift
-//  RandomItems
-//
-//  Created by sid on 5/21/15.
-//  Copyright (c) 2015 madsid. All rights reserved.
-//
-
-import Cocoa
+import UIKit
 
 class BNRItem: NSObject , Printable {
     var _itemName:String = ""
@@ -72,8 +64,8 @@ class BNRItem: NSObject , Printable {
     }
     
     func randomItem() -> BNRItem{
-        var randomAdjectiveList:Array = ["Fluffy","Rusty","Shiny"]
-        var randomNounList:Array = ["Bear","Spork","Mac"]
+        var randomAdjectiveList = ["Fluffy","Rusty","Shiny"]
+        var randomNounList = ["Bear","Spork","Mac"]
         var adjectiveIndex = Int(rand()) % randomAdjectiveList.count
         var nounIntex = Int(rand()) % randomNounList.count
         var randomName = " \(randomAdjectiveList[adjectiveIndex])  \(randomNounList[adjectiveIndex])"
