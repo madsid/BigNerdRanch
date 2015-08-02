@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRDetailViewController" customModule="BNRHomepwner" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraButton" destination="iX0-ol-XtL" id="CAy-4U-70K"/>
+                <outlet property="dateLabel" destination="H2U-nh-lGf" id="8vw-H2-7dG"/>
+                <outlet property="imageView" destination="ZZv-Fd-bh1" id="qed-qw-6ap"/>
+                <outlet property="nameField" destination="huO-aP-r5K" id="3mM-VG-2YM"/>
+                <outlet property="nameLabel" destination="Wih-M9-mUf" id="wIX-CJ-HoT"/>
+                <outlet property="serialField" destination="si4-4L-uSi" id="n2f-f7-X7c"/>
+                <outlet property="serialLabel" destination="T0F-u3-YLa" id="n8W-f5-VEh"/>
+                <outlet property="toolBar" destination="oiK-br-G2K" id="UvL-Lt-AJg"/>
+                <outlet property="valueField" destination="GFU-Ys-Cyf" id="zW4-GV-rKK"/>
+                <outlet property="valueLabel" destination="C3m-PQ-AFL" id="GWe-Ay-9gJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0F-u3-YLa">
+                    <rect key="frame" x="20" y="123" width="43" height="30"/>
+                    <state key="normal" title="Serial:">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="huO-aP-r5K">
+                    <rect key="frame" x="73" y="86" width="507" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="d5u-eh-a30"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="si4-4L-uSi">
+                    <rect key="frame" x="71" y="124" width="509" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="84J-hm-7pG"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3m-PQ-AFL">
+                    <rect key="frame" x="20" y="161" width="42" height="30"/>
+                    <state key="normal" title="Value:">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2U-nh-lGf">
+                    <rect key="frame" x="20" y="200" width="560" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wih-M9-mUf">
+                    <rect key="frame" x="20" y="85" width="45" height="30"/>
+                    <state key="normal" title="Name:">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="ZZv-Fd-bh1">
+                    <rect key="frame" x="20" y="229" width="560" height="327"/>
+                </imageView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oiK-br-G2K">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <items>
+                        <barButtonItem systemItem="camera" id="iX0-ol-XtL">
+                            <connections>
+                                <action selector="takePicture:" destination="-1" id="cn3-aE-RrM"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GFU-Ys-Cyf">
+                    <rect key="frame" x="70" y="162" width="510" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="wEu-YZ-CwN"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GFU-Ys-Cyf" firstAttribute="baseline" secondItem="C3m-PQ-AFL" secondAttribute="baseline" id="1sp-el-I6g"/>
+                <constraint firstItem="huO-aP-r5K" firstAttribute="leading" secondItem="Wih-M9-mUf" secondAttribute="trailing" constant="8" id="4H7-oL-qPJ"/>
+                <constraint firstItem="si4-4L-uSi" firstAttribute="leading" secondItem="T0F-u3-YLa" secondAttribute="trailing" constant="8" symbolic="YES" id="4Zu-w6-oKu"/>
+                <constraint firstItem="huO-aP-r5K" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="86" id="5RN-8b-tUP"/>
+                <constraint firstItem="H2U-nh-lGf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="6ma-mI-YaD"/>
+                <constraint firstItem="GFU-Ys-Cyf" firstAttribute="leading" secondItem="C3m-PQ-AFL" secondAttribute="trailing" constant="8" symbolic="YES" id="BGJ-Eb-Hxo"/>
+                <constraint firstAttribute="trailing" secondItem="huO-aP-r5K" secondAttribute="trailing" constant="20" symbolic="YES" id="Cp6-iS-3tH"/>
+                <constraint firstItem="GFU-Ys-Cyf" firstAttribute="leading" secondItem="C3m-PQ-AFL" secondAttribute="trailing" constant="8" symbolic="YES" id="FqP-wH-ahV"/>
+                <constraint firstAttribute="centerX" secondItem="H2U-nh-lGf" secondAttribute="centerX" id="Gra-cV-hDg"/>
+                <constraint firstItem="oiK-br-G2K" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" symbolic="YES" id="HOl-uU-kfB"/>
+                <constraint firstItem="GFU-Ys-Cyf" firstAttribute="top" secondItem="si4-4L-uSi" secondAttribute="bottom" constant="8" symbolic="YES" id="Hfl-cv-wYB"/>
+                <constraint firstAttribute="trailing" secondItem="ZZv-Fd-bh1" secondAttribute="trailing" constant="20" symbolic="YES" id="NA1-mP-sMP"/>
+                <constraint firstItem="C3m-PQ-AFL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="NEs-BG-lvC"/>
+                <constraint firstItem="si4-4L-uSi" firstAttribute="leading" secondItem="T0F-u3-YLa" secondAttribute="trailing" constant="8" symbolic="YES" id="Ozk-Dh-HCK"/>
+                <constraint firstAttribute="trailing" secondItem="GFU-Ys-Cyf" secondAttribute="trailing" constant="20" symbolic="YES" id="PRi-Ds-CqN"/>
+                <constraint firstItem="oiK-br-G2K" firstAttribute="top" secondItem="ZZv-Fd-bh1" secondAttribute="bottom" symbolic="YES" id="UQv-p6-3dp"/>
+                <constraint firstItem="T0F-u3-YLa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="UUh-V3-Udt"/>
+                <constraint firstItem="H2U-nh-lGf" firstAttribute="top" secondItem="GFU-Ys-Cyf" secondAttribute="bottom" constant="8" symbolic="YES" id="Usq-ck-t4q"/>
+                <constraint firstItem="ZZv-Fd-bh1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="Vc7-fo-ntO"/>
+                <constraint firstItem="huO-aP-r5K" firstAttribute="leading" secondItem="Wih-M9-mUf" secondAttribute="trailing" constant="8" symbolic="YES" id="Z0S-Hw-YEF"/>
+                <constraint firstItem="si4-4L-uSi" firstAttribute="top" secondItem="huO-aP-r5K" secondAttribute="bottom" constant="8" id="aDa-bS-1mz"/>
+                <constraint firstAttribute="trailing" secondItem="oiK-br-G2K" secondAttribute="trailing" symbolic="YES" id="avL-lf-tLg"/>
+                <constraint firstItem="Wih-M9-mUf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="eP5-xZ-SYN"/>
+                <constraint firstAttribute="trailing" secondItem="si4-4L-uSi" secondAttribute="trailing" constant="20" symbolic="YES" id="hV4-XX-rRq"/>
+                <constraint firstAttribute="trailing" secondItem="H2U-nh-lGf" secondAttribute="trailing" constant="20" symbolic="YES" id="iHY-vi-YlL"/>
+                <constraint firstItem="ZZv-Fd-bh1" firstAttribute="top" secondItem="H2U-nh-lGf" secondAttribute="bottom" constant="8" symbolic="YES" id="nK6-Iy-zK6"/>
+                <constraint firstItem="Wih-M9-mUf" firstAttribute="baseline" secondItem="huO-aP-r5K" secondAttribute="baseline" id="t3h-Y5-6Hr"/>
+                <constraint firstAttribute="bottom" secondItem="oiK-br-G2K" secondAttribute="bottom" id="uf0-3C-Xpu"/>
+                <constraint firstItem="T0F-u3-YLa" firstAttribute="baseline" secondItem="si4-4L-uSi" secondAttribute="baseline" id="xJI-ZW-oKn"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <connections>
+                <action selector="backgroundTapped:" destination="-1" eventType="touchUpInside" id="fvx-VO-v6J"/>
+            </connections>
+            <point key="canvasLocation" x="530" y="510"/>
+        </view>
+    </objects>
+</document>

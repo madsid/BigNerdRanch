@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FA3DC821B1A2800003649DB /* BNRImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA3DC811B1A2800003649DB /* BNRImageViewController.swift */; };
+		1FBC1DFF1B1401620084714B /* BNRImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBC1DFE1B1401620084714B /* BNRImageStore.swift */; };
+		1FCB3FE41B1BBADB00AD4A4D /* Homepwner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FCB3FE21B1BBADB00AD4A4D /* Homepwner.xcdatamodeld */; };
+		1FCB3FE61B1BBC1D00AD4A4D /* BNRImageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCB3FE51B1BBC1D00AD4A4D /* BNRImageTransformer.swift */; };
+		1FCB3FE81B1BC76800AD4A4D /* BNRItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCB3FE71B1BC76800AD4A4D /* BNRItem.swift */; };
+		1FD571B01B198E3200DBBC76 /* BNRItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD571AE1B198E3200DBBC76 /* BNRItemCell.swift */; };
+		1FD571B11B198E3200DBBC76 /* BNRItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FD571AF1B198E3200DBBC76 /* BNRItemCell.xib */; };
 		1FE088EF1B12BE4B00495DB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE088EE1B12BE4B00495DB8 /* AppDelegate.swift */; };
 		1FE088F61B12BE4B00495DB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE088F51B12BE4B00495DB8 /* Images.xcassets */; };
 		1FE088F91B12BE4B00495DB8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE088F71B12BE4B00495DB8 /* LaunchScreen.xib */; };
 		1FE089051B12BE4B00495DB8 /* BNRHomepwnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE089041B12BE4B00495DB8 /* BNRHomepwnerTests.swift */; };
 		1FE0890F1B12BF3700495DB8 /* BNRItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE0890E1B12BF3700495DB8 /* BNRItemsViewController.swift */; };
-		1FE089131B12C1B100495DB8 /* BNRItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE089121B12C1B100495DB8 /* BNRItem.swift */; };
 		1FE089151B12C29F00495DB8 /* BNRItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE089141B12C29F00495DB8 /* BNRItemStore.swift */; };
+		1FE089191B13B09700495DB8 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE089181B13B09700495DB8 /* HeaderView.xib */; };
+		1FE0891C1B13CDE600495DB8 /* BNRDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE0891A1B13CDE600495DB8 /* BNRDetailViewController.swift */; };
+		1FE0891D1B13CDE600495DB8 /* BNRDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE0891B1B13CDE600495DB8 /* BNRDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FA3DC811B1A2800003649DB /* BNRImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNRImageViewController.swift; sourceTree = "<group>"; };
+		1FBC1DFE1B1401620084714B /* BNRImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNRImageStore.swift; sourceTree = "<group>"; };
+		1FCB3FE31B1BBADB00AD4A4D /* Homepwner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Homepwner.xcdatamodel; sourceTree = "<group>"; };
+		1FCB3FE51B1BBC1D00AD4A4D /* BNRImageTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNRImageTransformer.swift; sourceTree = "<group>"; };
+		1FCB3FE71B1BC76800AD4A4D /* BNRItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BNRItem.swift; path = ../BNRItem.swift; sourceTree = "<group>"; };
+		1FD571AE1B198E3200DBBC76 /* BNRItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BNRItemCell.swift; path = ../BNRItemCell.swift; sourceTree = "<group>"; };
+		1FD571AF1B198E3200DBBC76 /* BNRItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BNRItemCell.xib; path = ../BNRItemCell.xib; sourceTree = "<group>"; };
 		1FE088E91B12BE4B00495DB8 /* BNRHomepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BNRHomepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE088ED1B12BE4B00495DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE088EE1B12BE4B00495DB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,8 +52,10 @@
 		1FE089031B12BE4B00495DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE089041B12BE4B00495DB8 /* BNRHomepwnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNRHomepwnerTests.swift; sourceTree = "<group>"; };
 		1FE0890E1B12BF3700495DB8 /* BNRItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNRItemsViewController.swift; sourceTree = "<group>"; };
-		1FE089121B12C1B100495DB8 /* BNRItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNRItem.swift; sourceTree = "<group>"; };
 		1FE089141B12C29F00495DB8 /* BNRItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNRItemStore.swift; sourceTree = "<group>"; };
+		1FE089181B13B09700495DB8 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		1FE0891A1B13CDE600495DB8 /* BNRDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNRDetailViewController.swift; sourceTree = "<group>"; };
+		1FE0891B1B13CDE600495DB8 /* BNRDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +98,18 @@
 			isa = PBXGroup;
 			children = (
 				1FE088EE1B12BE4B00495DB8 /* AppDelegate.swift */,
-				1FE089121B12C1B100495DB8 /* BNRItem.swift */,
+				1FE0891A1B13CDE600495DB8 /* BNRDetailViewController.swift */,
+				1FCB3FE21B1BBADB00AD4A4D /* Homepwner.xcdatamodeld */,
+				1FCB3FE51B1BBC1D00AD4A4D /* BNRImageTransformer.swift */,
+				1FE0891B1B13CDE600495DB8 /* BNRDetailViewController.xib */,
+				1FBC1DFE1B1401620084714B /* BNRImageStore.swift */,
 				1FE089141B12C29F00495DB8 /* BNRItemStore.swift */,
+				1FCB3FE71B1BC76800AD4A4D /* BNRItem.swift */,
 				1FE0890E1B12BF3700495DB8 /* BNRItemsViewController.swift */,
+				1FA3DC811B1A2800003649DB /* BNRImageViewController.swift */,
+				1FD571AE1B198E3200DBBC76 /* BNRItemCell.swift */,
+				1FD571AF1B198E3200DBBC76 /* BNRItemCell.xib */,
+				1FE089181B13B09700495DB8 /* HeaderView.xib */,
 				1FE088F51B12BE4B00495DB8 /* Images.xcassets */,
 				1FE088F71B12BE4B00495DB8 /* LaunchScreen.xib */,
 				1FE088EC1B12BE4B00495DB8 /* Supporting Files */,
@@ -195,8 +222,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE0891D1B13CDE600495DB8 /* BNRDetailViewController.xib in Resources */,
+				1FE089191B13B09700495DB8 /* HeaderView.xib in Resources */,
 				1FE088F91B12BE4B00495DB8 /* LaunchScreen.xib in Resources */,
 				1FE088F61B12BE4B00495DB8 /* Images.xcassets in Resources */,
+				1FD571B11B198E3200DBBC76 /* BNRItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,8 +245,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE0890F1B12BF3700495DB8 /* BNRItemsViewController.swift in Sources */,
-				1FE089131B12C1B100495DB8 /* BNRItem.swift in Sources */,
+				1FCB3FE41B1BBADB00AD4A4D /* Homepwner.xcdatamodeld in Sources */,
+				1FCB3FE61B1BBC1D00AD4A4D /* BNRImageTransformer.swift in Sources */,
+				1FE0891C1B13CDE600495DB8 /* BNRDetailViewController.swift in Sources */,
+				1FA3DC821B1A2800003649DB /* BNRImageViewController.swift in Sources */,
 				1FE088EF1B12BE4B00495DB8 /* AppDelegate.swift in Sources */,
+				1FBC1DFF1B1401620084714B /* BNRImageStore.swift in Sources */,
+				1FCB3FE81B1BC76800AD4A4D /* BNRItem.swift in Sources */,
+				1FD571B01B198E3200DBBC76 /* BNRItemCell.swift in Sources */,
 				1FE089151B12C29F00495DB8 /* BNRItemStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +377,7 @@
 				INFOPLIST_FILE = BNRHomepwner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -351,6 +388,7 @@
 				INFOPLIST_FILE = BNRHomepwner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -407,6 +445,7 @@
 				1FE0890A1B12BE4B00495DB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FE0890B1B12BE4B00495DB8 /* Build configuration list for PBXNativeTarget "BNRHomepwnerTests" */ = {
 			isa = XCConfigurationList;
@@ -415,8 +454,22 @@
 				1FE0890D1B12BE4B00495DB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1FCB3FE21B1BBADB00AD4A4D /* Homepwner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1FCB3FE31B1BBADB00AD4A4D /* Homepwner.xcdatamodel */,
+			);
+			currentVersion = 1FCB3FE31B1BBADB00AD4A4D /* Homepwner.xcdatamodel */;
+			path = Homepwner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1FE088E11B12BE4A00495DB8 /* Project object */;
 }

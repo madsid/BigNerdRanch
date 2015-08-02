@@ -31,6 +31,8 @@ class BNRItemsViewController: UITableViewController, UITableViewDataSource {
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "logo.png"))
         
+        
+        
         for item in BNRItemStore.sharedStore.allItems {
             if(item.valueInDollars > 50){
                 itemsGreaterThan50.append(item)
@@ -62,7 +64,7 @@ class BNRItemsViewController: UITableViewController, UITableViewDataSource {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if ( itemsections.count-1 != indexPath.section ){
+        if ( itemsections.count-1 > indexPath.section ){
             return CGFloat(60)
         }
         return CGFloat(44)

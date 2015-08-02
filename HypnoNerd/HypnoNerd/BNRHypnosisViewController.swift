@@ -68,6 +68,7 @@ class BNRHypnosisViewController: UIViewController, UITextFieldDelegate {
     }
     
     func drawHypnoticMessage(message:String){
+        
         for(var i = 0; i < 20; i++){
             var messageLabel = UILabel()
             messageLabel.backgroundColor = UIColor.clearColor()
@@ -86,6 +87,29 @@ class BNRHypnosisViewController: UIViewController, UITextFieldDelegate {
             messageLabel.frame = frame
             
             self.view.addSubview(messageLabel)
+            
+            messageLabel.alpha = 0.0
+            
+            UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+                messageLabel.alpha = 1.0
+                }, completion: nil)
+            
+            
+            UIView.animateKeyframesWithDuration(1.0, delay: 0.0, options: UIViewKeyframeAnimationOptions.allZeros, animations: {
+                UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0.8, animations: {
+                    messageLabel.center = self.view.center
+                })
+                
+                UIView.addKeyframeWithRelativeStartTime(0.8, relativeDuration: 0.2, animations: {
+                    var x = CGFloat(rand()) % width
+                    var y = CGFloat(rand()) % height
+                    messageLabel.center = CGPointMake(x, y)
+                })
+                }, completion: { finished in
+                    println("Animation finished")
+                })
+            
+            
             
             var motionEffect = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
             motionEffect.minimumRelativeValue = -25

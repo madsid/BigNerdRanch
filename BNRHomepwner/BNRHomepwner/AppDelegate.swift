@@ -19,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         var itemsViewController = BNRItemsViewController()
-        self.window?.rootViewController = itemsViewController
+        var navController = UINavigationController(rootViewController: itemsViewController)
+        
+        self.window?.rootViewController = navController
         
         self.window?.backgroundColor = UIColor.whiteColor()
         self.window?.makeKeyAndVisible()
@@ -34,6 +36,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        var sucess = BNRItemStore.sharedStore.saceChanges()
+        if(sucess){
+            println("Saved All of the BNRItems")
+        }
+        else{
+            println("Could not save any of BNRItems")
+        }
     }
 
     func applicationWillEnterForeground(application: UIApplication) {

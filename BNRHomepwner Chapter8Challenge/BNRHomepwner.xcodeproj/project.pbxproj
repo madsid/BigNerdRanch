@@ -407,6 +407,7 @@
 				1FE0890A1B12BE4B00495DB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FE0890B1B12BE4B00495DB8 /* Build configuration list for PBXNativeTarget "BNRHomepwnerTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +416,7 @@
 				1FE0890D1B12BE4B00495DB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

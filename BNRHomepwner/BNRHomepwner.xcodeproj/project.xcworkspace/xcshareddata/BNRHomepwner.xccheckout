@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>BA446643-68ED-45BD-97A4-5D13F819E5A6</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>BNRHomepwner</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>F9A9D03BC8C76F32483B9A97097EAFC5E0E3EEF5</key>
 		<string>https://github.com/madsid/BigNerdRanch.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>BNRHomepwner/BNRHomepwner.xcodeproj/project.xcworkspace</string>
+	<string>BNRHomepwner/BNRHomepwner.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F9A9D03BC8C76F32483B9A97097EAFC5E0E3EEF5</key>

@@ -27,7 +27,20 @@ class BNRItemStore:NSObject {
         }
     }
     
+    func removeItem(item:BNRItem) {
+        var index = find(self.privateItems, item)
+        self.privateItems.removeAtIndex(index!)
+    }
     
+    func moveItem(fromIndex:Int, toIndex:Int){
+        if(fromIndex == toIndex){
+            return
+        }
+        var item = self.privateItems[fromIndex]
+        
+        self.privateItems.removeAtIndex(fromIndex)
+        self.privateItems.insert(item, atIndex: toIndex)
+    }
     
     
     
